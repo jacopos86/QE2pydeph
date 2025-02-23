@@ -64,7 +64,7 @@ MODULE spin_operators
         USE control_flags,                 ONLY : gamma_only
         USE io_global,                     ONLY : stdout
         USE pseudo_types,                  ONLY : pseudo_upf
-        USE spin_orbit_operator_uspp,      ONLY : Vso_US
+        !    USE spin_orbit_operator_uspp,      ONLY : Vso_US
 
         !
         IMPLICIT NONE
@@ -121,17 +121,17 @@ MODULE spin_operators
                                     !    US pp case
                                     !
                                     ! ------------------------------------
-                                    CASE ('US')
-                                        IF (gamma_only) THEN
-                                            HSO_a (itr,isp) = HSO_a (itr,isp) +     &
-                                                bec_sp (ki)%r (ikb,oi) * Vso_US (ih,jh,isp,nt) * bec_sp (kpi)%r (jkb,ni)
+                                    !CASE ('US')
+                                    !    IF (gamma_only) THEN
+                                    !        HSO_a (itr,isp) = HSO_a (itr,isp) +     &
+                                    !            bec_sp (ki)%r (ikb,oi) * Vso_US (ih,jh,isp,nt) * bec_sp (kpi)%r (jkb,ni)
                                             !
                                             !WRITE(stdout,*) HSO_a (itr,a), bec_sp (ki)%r (ikb,oi), s_xyz (a) 
-                                        ELSE
-                                            HSO_a (itr,isp) = HSO_a (itr,isp) +     &
-                                                conjg (bec_sp (ki)%k (ikb,oi)) * Vso_US (ih,jh,isp,nt) * bec_sp (kpi)%k (jkb,ni)
+                                    !    ELSE
+                                    !        HSO_a (itr,isp) = HSO_a (itr,isp) +     &
+                                    !            conjg (bec_sp (ki)%k (ikb,oi)) * Vso_US (ih,jh,isp,nt) * bec_sp (kpi)%k (jkb,ni)
                                             !
-                                        END IF
+                                    !    END IF
                                     !  ---------------------------------
                                     !
                                     !    NC pp case
