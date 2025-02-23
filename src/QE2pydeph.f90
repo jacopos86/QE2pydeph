@@ -117,21 +117,21 @@ PROGRAM QE_pydeph
    END IF
 
    !
-   IF (SOC_CORR) THEN
+   !IF (SOC_CORR) THEN
       !
-      call mp_bcast (frpsfile, ionode_id, intra_image_comm)
+   !   call mp_bcast (frpsfile, ionode_id, intra_image_comm)
 
       !
-      dft_name = get_dft_name ()
+   !   dft_name = get_dft_name ()
       ! allocate frpp
-      ALLOCATE ( frpp (ntyp), STAT=ierr )
-      IF (ierr/=0) call errore (code, 'error allocating frpp', abs (ierr))
+   !   ALLOCATE ( frpp (ntyp), STAT=ierr )
+   !   IF (ierr/=0) call errore (code, 'error allocating frpp', abs (ierr))
 
       !
-      call read_FR_pseudo ( frpp, dft_name, .TRUE. )
-      call init_run_frpp ()
+   !   call read_FR_pseudo ( frpp, dft_name, .TRUE. )
+   !   call init_run_frpp ()
       !
-   END IF
+   !END IF
 
    !
    !  prepare ZFS calculation : if required
