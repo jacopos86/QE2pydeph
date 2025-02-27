@@ -848,7 +848,7 @@ MODULE zfs_module
       !   compute <Psi_o|Hso|Psi_n>
       !
       
-      call compute_soc_matrix_elements ( transitions_list, ntr )
+      ! call compute_soc_matrix_elements ( transitions_list, ntr )
       
       !
       call set_soc_zfs_tensor ( transitions_list, ntr )
