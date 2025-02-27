@@ -112,7 +112,7 @@ PROGRAM QE_pydeph
       !  ... READ frpp IF NEEDED
       !
 
-      IF (SOC_CORR) call read_FR_pseudo_from_file ()
+      ! IF (SOC_CORR) call read_FR_pseudo_from_file ()
       !
    END IF
 
@@ -154,7 +154,7 @@ PROGRAM QE_pydeph
          !  set SOC operator
          !
 
-         call compute_spin_orbit_operator ()
+         ! call compute_spin_orbit_operator ()
 
          !
          !  compute the SOC ZFS tensor
