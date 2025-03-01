@@ -2,3 +2,7 @@ src/*.o
 src/*.mod
 src/*.a
 src/*.x
+examples/*/*.save
+examples/*/*.out
+examples/*/*.xml
+examples/*/*.mix*
