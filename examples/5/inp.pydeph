@@ -1,0 +1,5 @@
+&inputQE_pydeph
+	prefix='test5',
+	outdir='/home/jacopo/PROJECTS/q-e-qe-6.5/QE2pydeph/examples/5',
+	ELPH=.true.,
+/

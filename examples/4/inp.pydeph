@@ -1,0 +1,21 @@
+&inputQE_pydeph
+	outdir = '/home/jacopo/PROJECTS/q-e-qe-6.5/QE2pydeph/examples/4'
+	prefix = 'test4'
+	ELPH = .true.
+	ZFS = .false.
+	HFI = .false.
+	nconfig = 0
+	SOC_CORR = .false.
+/
+ATOMIC_PSEUDO
+O  O_ONCV_PBE_FR-1.0.upf
+
+&inputph
+ 	tr2_ph=1.0d-14,
+	prefix='test4',
+	epsil=.true.,
+	amass(1)=15.9989996,
+	outdir='/home/jacopo/PROJECTS/q-e-qe-6.5/QE2pydeph/examples/4',
+	fildyn='o2.dynG',
+/
+ 0.0 0.0 0.0

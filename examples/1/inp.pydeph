@@ -1,0 +1,7 @@
+&inputQE_pydeph
+	outdir = '/home/jacopo/PROJECTS/q-e-qe-6.5/QE2pydeph/examples/1'
+	prefix = 'test1'
+	ZFS = .true.
+	HFI = .false.
+	nconfig = 10
+/
